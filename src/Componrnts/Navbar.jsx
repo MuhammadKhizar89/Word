@@ -34,9 +34,9 @@ export const Navbar = (props) => {
             <a className="nav-link disabled" aria-disabled="true">Disabled</a>
           </li>
         </ul>
-        <div class={`form-check form-switch text-${props.mode1=='light'?'dark':'light'}`}>
-  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" onClick={props.convert}/>
-  <label class="form-check-label " htmlFor="flexSwitchCheckDefault" >Enable {props.mode1=='light'?'dark':'light'} Mode</label>
+        <div className={`form-check form-switch text-${props.mode1=='light'?'dark':'light'}`}>
+  <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" onClick={props.convert}/>
+  <label className="form-check-label " htmlFor="flexSwitchCheckDefault" >Enable {props.mode1=='light'?'dark':'light'} Mode</label>
 
 
    </div>
@@ -47,10 +47,10 @@ export const Navbar = (props) => {
     <button  type="button"  className="btn btn-outline-primary mx-1" onClick={() => props.butcolor('primary')}>
   Blue
 </button>
-<button type="button" class="btn btn-outline-secondary mx-1" onClick={() =>props.butcolor("secondary")}>Gray</button>
-<button type="button" class="btn btn-outline-success mx-1" onClick={() =>props.butcolor("success")}>Green</button>
-<button type="button" class="btn btn-outline-danger mx-1" onClick={() =>props.butcolor("danger")}>Red</button>
-<button type="button" class="btn btn-outline-warning mx-1" onClick={() =>props.butcolor("warning")}>Yellow</button>
+<button type="button" className="btn btn-outline-secondary mx-1" onClick={() =>props.butcolor("secondary")}>Gray</button>
+<button type="button" className="btn btn-outline-success mx-1" onClick={() =>props.butcolor("success")}>Green</button>
+<button type="button" className="btn btn-outline-danger mx-1" onClick={() =>props.butcolor("danger")}>Red</button>
+<button type="button" className="btn btn-outline-warning mx-1" onClick={() =>props.butcolor("warning")}>Yellow</button>
 <button type="button" className="btn bg-dark btn-outline-warning mx-1" onClick={() =>props.butcolor("dark")} style={{ color: 'white'}}>  Black</button>
   </nav>
   </div>

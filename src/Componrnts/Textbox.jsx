@@ -120,41 +120,41 @@ export const Textbox = (props) => {
                         Enter Your Text here{" "}
                     </label>
                 </div>
-                <button type="button" class={` my-3 btn btn-${props.butcolor} btn-mm mx-2`} onClick={upperc}>
+                <button type="button" className={` my-3 btn btn-${props.butcolor} btn-mm mx-2`} onClick={upperc}>
                     Convert To UpperCase
                 </button>
-                <button type="button" class={` my-3 btn btn-${props.butcolor} btn-mm mx-2`} onClick={lowerc}>
+                <button type="button" className={` my-3 btn btn-${props.butcolor} btn-mm mx-2`} onClick={lowerc}>
                     Convert To LowerCase
                 </button>
-                <button type="submit" onClick={speak} class={` my-3 btn btn-${props.butcolor} btn-mm mx-2`}>
+                <button type="submit" onClick={speak} className={` my-3 btn btn-${props.butcolor} btn-mm mx-2`}>
                     Speak
                 </button>
-                <button type="button" class={` my-3 btn btn-${props.butcolor} btn-mm mx-2`} onClick={Clear}>
+                <button type="button" className={` my-3 btn btn-${props.butcolor} btn-mm mx-2`} onClick={Clear}>
                     Clear Text
                 </button>
                 <button
                     type="button"
-                    class={` my-3 btn btn-${props.butcolor} btn-mm mx-2`}
+                    className={` my-3 btn btn-${props.butcolor} btn-mm mx-2`}
                     onClick={handleCapitalizeWordClick}
                 >
                     First Letter Capital
                 </button>
-                <button type="button" class={` my-3 btn btn-${props.butcolor} btn-mm`} onClick={Format}>
+                <button type="button" className={` my-3 btn btn-${props.butcolor} btn-mm`} onClick={Format}>
                     Format
                 </button>
 
                 <div className={`my-2 container text-${props.mode1 == "light" ? "dark" : "light"}`}>
                     <h2>Your Text Summary</h2>
                     <p>
-                        {k} words and {ab.length} charecters
+                        { text.length>0? `${(text.split(/\s+/).filter((el)=>{return el.length!==0}).length)} words and ${ab.length} charecters`:""}
                     </p>
-                    <p>{k * 0.005}minutes </p>
-                    <p>{vov} Vowels</p>
+                    <p>  { text.length>0? `${k * 0.005} minutes`:""} </p>
+                    <p> { text.length>0?`${vov} Vowels`:""}</p>
                 </div>
             </div>
             <div className={`my-2 container text-${props.mode1 == "light" ? "dark" : "light"}`}>
                 <h2>Preview</h2>
-                {text}
+                {text.length>0?text:"Enter Something"}
             </div>
         </>
     );

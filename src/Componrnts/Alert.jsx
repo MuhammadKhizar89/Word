@@ -5,7 +5,7 @@ export const Alert = (props) => {
     <div style={{ height:'50px'}}>
     {
     
-        props.aler&& <div class="alert alert-success" role="alert">
+        props.aler&& <div className="alert alert-success" role="alert">
         {props.aler.condi}-{  props.aler.message}
       </div>
       

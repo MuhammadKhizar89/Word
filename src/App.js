@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { Navbar } from './Componrnts/Navbar';
 import { Textbox } from './Componrnts/Textbox';
@@ -14,7 +13,7 @@ function App() {
 const showcolor=(xy)=>
 {
   setcolor(xy);
-  console.log(xy);
+  
 }
   const showalert = (x, y) => {
    
